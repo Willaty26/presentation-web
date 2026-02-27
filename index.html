@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo Web Profesional</title>
+    
     <style>
+ 
 
+        .footer-section {
+            background-color: #020202; 
+            padding: 50px 20px 30px;
+            border-top: 1px solid #1a1a1a; 
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .footer-text {
+            color: #a0aab2;
+            font-size: 1rem;
+            max-width: 500px;
+            line-height: 1.5;
+        }
+
+        /* Un enlace de texto elegante */
+        .footer-link {
+            color: #00e5ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .copyright {
+            color: #444444; 
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+ 
+ 
         * {
             margin: 0;
             padding: 0;
@@ -28,7 +80,6 @@
             text-align: center;
             height: 100vh; 
             padding: 0 20px;
-            /* Un pequeño resplandor azul en el fondo para que se vea "cool" */
             background: radial-gradient(circle at center, #001f3f 0%, #050505 60%);
         }
 
@@ -41,9 +92,8 @@
             line-height: 1.2;
         }
 
-
         .text-blue {
-            color: #00e5ff; /* Azul cian brillante */
+            color: #00e5ff; 
             text-shadow: 0 0 15px rgba(0, 229, 255, 0.4); 
         }
 
@@ -71,18 +121,139 @@
             letter-spacing: 1px;
         }
 
-
         .cta-button:hover {
             background-color: #00e5ff;
             color: #050505; 
-            box-shadow: 0 0 20px rgba(0, 229, 255, 0.6); /* Brilla más fuerte */
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
         }
+
+
+        .services-section {
+            padding: 100px 20px;
+            background-color: #020202; 
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto; 
+        }
+
+        .service-card {
+            background-color: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            border-radius: 15px;
+            padding: 40px 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            border-color: #00e5ff;
+            box-shadow: 0 10px 30px rgba(0, 229, 255, 0.15);
+            transform: translateY(-10px); 
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #00e5ff;
+            margin-bottom: 20px;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .service-desc {
+            color: #a0aab2;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+		
+
+        .about-section {
+            padding: 100px 20px;
+            background-color: #050505; 
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background: linear-gradient(145deg, #0a0a0a, #020202);
+            border: 1px solid #1a1a1a;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .about-desc {
+            color: #a0aab2;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background-color: rgba(0, 229, 255, 0.1);
+            color: #00e5ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+        }
+		
+	
+		
+		
+		
     </style>
 </head>
 <body>
 
     <section class="hero-section">
-        
         <h1 class="hero-title">
             Haz que tu negocio destaque en <span class="text-blue">Internet</span>
         </h1>
@@ -91,9 +262,91 @@
             Diseño web rápido, seguro y sin complicaciones para dueños de negocios que quieren conseguir más clientes. Construido con tecnología de servidores de alto nivel.
         </p>
         
-        <a href="https://wa.me/qr/6FOXVL5QCY4NN1?text=Hola%20Alex,%20me%20interesa%20una%20página%20web%20para%20mi%20negocio." class="cta-button">Obtener Consulta Gratuita</a>
-
+        <a href="https://wa.me/qr/6FOXVL5QCY4NN1?text=Hola%20Alex,%20me%20interesa%20una%20página%20web%20para%20mi%20negocio." target="_blank" class="cta-button">Obtener Consulta Gratuita</a>
     </section>
+	
+	<section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <div class="about-text">
+                <h2 class="about-title">No soy el típico diseñador web. <br><span class="text-blue">Construyo infraestructura.</span></h2>
+                
+                <p class="about-desc">
+                    Hola, soy Alex Miguel Rojas. Muchos creadores de páginas web solo se preocupan por que el sitio se vea bonito. Yo me aseguro de que sea rápido, seguro y funcione impecablemente por debajo.
+                </p>
+                <p class="about-desc">
+                    Cuento con certificaciones oficiales en <strong>Google IT Support</strong>, además de <strong>Linux Essentials</strong>, <strong>Introduction to Cybersecurity</strong> y <strong>Redes (CCNA) por Cisco</strong>. Esto significa que tu presencia digital estará construida sobre cimientos técnicos sólidos, configurada con altos estándares de seguridad y optimizada para no fallar. 
+                </p>
+                <p class="about-desc">
+                    Mi enfoque ético de trabajo garantiza total transparencia: sin costos ocultos, sin lenguaje técnico confuso, solo resultados reales para hacer crecer tu negocio local.
+                </p>
+
+                <div class="tech-tags">
+                    <span class="tag">Google IT Certified</span>
+                    <span class="tag">Cisco Linux Essentials</span>
+                    <span class="tag">Cisco CCNA Networking</span>
+                    <span class="tag">Cybersecurity</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <h2 class="section-title">Soluciones Digitales para <span class="text-blue">Tu Negocio</span></h2>
+        
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3 class="service-title">El Escaparate Digital</h3>
+                <p class="service-desc">
+                    Tu negocio en línea en tiempo récord. Una página directa y optimizada para que los clientes locales te encuentren en Google y te contacten a un solo clic de distancia.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📸</div>
+                <h3 class="service-title">Catálogo Visual</h3>
+                <p class="service-desc">
+                    Muestra la calidad de tu trabajo al mundo. Galerías estructuradas y profesionales ideales para contratistas, fotógrafos o creadores que necesitan exhibir sus proyectos.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3 class="service-title">Captura de Prospectos</h3>
+                <p class="service-desc">
+                    Filtra a los curiosos. Formularios estratégicos que capturan la información de clientes listos para comprar, enviando los datos directamente a tu correo.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+<footer class="footer-section">
+        <div class="footer-content">
+            
+            <div class="footer-logo">
+                Alex Rojas <span class="text-blue">|</span> Soluciones Digitales
+            </div>
+            
+            <p class="footer-text">
+                Impulsando el crecimiento de negocios locales en Massachusetts y de todo el mundo con infraestructura web rápida, segura y efectiva.
+            </p>
+            
+            <p class="footer-text">
+                ¿Listo para transformar tu negocio? <br>
+                <a href="https://wa.me/qr/6FOXVL5QCY4NN1" target="_blank" class="footer-link">Escríbeme por WhatsApp aquí</a>
+            </p>
+
+            <div class="copyright">
+                &copy; 2026 AlexOSCP. Todos los derechos reservados.
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>
